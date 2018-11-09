@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TKLoadingSwitch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yX8-XX-ilb" customClass="TKLoadingSwitch" customModule="TKLoadingSwitch" customModuleProvider="target">
+                                <rect key="frame" x="162" y="204" width="51" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="sucessAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="2e0-DP-6WL"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJ8-kY-QTG" customClass="TKLoadingSwitch" customModule="TKLoadingSwitch" customModuleProvider="target">
+                                <rect key="frame" x="162" y="328" width="51" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="failedAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="NDl-xZ-mLV"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhP-uJ-m9z" customClass="TKLoadingSwitch" customModule="TKLoadingSwitch" customModuleProvider="target">
+                                <rect key="frame" x="162" y="432" width="51" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" red="0.92549020049999997" green="0.23529411850000001" blue="0.1019607857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yX8-XX-ilb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="184" id="K5O-ig-pXW"/>
+                            <constraint firstItem="AhP-uJ-m9z" firstAttribute="top" secondItem="yJ8-kY-QTG" secondAttribute="bottom" constant="73" id="Mz4-5D-gVX"/>
+                            <constraint firstItem="AhP-uJ-m9z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TIk-a4-BCh"/>
+                            <constraint firstItem="yX8-XX-ilb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XjG-kA-rCY"/>
+                            <constraint firstItem="yJ8-kY-QTG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="u6y-ux-bH1"/>
+                            <constraint firstItem="yJ8-kY-QTG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ybs-Ie-A7N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
